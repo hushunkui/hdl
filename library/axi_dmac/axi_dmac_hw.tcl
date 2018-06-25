@@ -24,8 +24,8 @@ ad_ip_files axi_dmac [list \
   $ad_hdl_dir/library/util_axis_fifo/address_gray_pipelined.v \
   $ad_hdl_dir/library/util_axis_fifo/address_sync.v \
   $ad_hdl_dir/library/common/ad_mem.v \
-  inc_id.h \
-  resp.h \
+  inc_id.vh \
+  resp.vh \
   axi_dmac_regmap.v \
   axi_dmac_regmap_request.v \
   address_generator.v \

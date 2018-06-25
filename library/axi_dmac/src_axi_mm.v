@@ -184,7 +184,7 @@ dmac_data_mover # (
 );
 
 /* TODO
-`include "resp.h"
+`include "resp.vh"
 
 assign response_valid = 1'b0;
 assign response_resp = RESP_OKAY;
