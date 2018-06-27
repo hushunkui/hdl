@@ -16,7 +16,7 @@ adi_ip_files axi_ad9361 [list \
   "$ad_hdl_dir/library/common/ad_dds_sine_cordic.v" \
   "$ad_hdl_dir/library/common/ad_dds_sine.v" \
   "$ad_hdl_dir/library/common/ad_dds_1.v" \
-  "$ad_hdl_dir/library/common/ad_dds.v" \
+  "$ad_hdl_dir/library/common/ad_dds_2.v" \
   "$ad_hdl_dir/library/common/ad_datafmt.v" \
   "$ad_hdl_dir/library/common/ad_iqcor.v" \
   "$ad_hdl_dir/library/common/ad_addsub.v" \
