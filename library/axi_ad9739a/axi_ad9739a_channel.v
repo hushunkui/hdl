@@ -339,8 +339,7 @@ module axi_ad9739a_channel #(
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_00_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_0 (
@@ -353,13 +352,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_00_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_01_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_1 (
@@ -372,13 +370,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_01_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_02_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_2 (
@@ -391,13 +388,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_02_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_03_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_3 (
@@ -410,13 +406,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_03_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_04_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_4 (
@@ -429,13 +424,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_04_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_05_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_5 (
@@ -448,13 +442,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_05_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_06_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_6 (
@@ -467,13 +460,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_06_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_07_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_7 (
@@ -486,13 +478,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_07_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_08_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_8 (
@@ -505,13 +496,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_08_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_09_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_9 (
@@ -524,13 +514,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_09_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_10_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_10 (
@@ -543,13 +532,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_10_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_11_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_11 (
@@ -562,13 +550,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_11_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_12_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_12 (
@@ -581,13 +568,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_12_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_13_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_13 (
@@ -600,13 +586,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_13_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_14_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_14 (
@@ -619,13 +604,12 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_14_s));
   end
   endgenerate
-  
+
   generate
   if (DATAPATH_DISABLE == 1) begin
   assign dac_dds_data_15_s = 16'd0;
   end else begin
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
     .CORDIC_DW (DDS_CORDIC_DW))
   i_dds_15 (
@@ -638,7 +622,7 @@ module axi_ad9739a_channel #(
     .dds_data (dac_dds_data_15_s));
   end
   endgenerate
-  
+
   // single channel processor
 
   up_dac_channel #(.CHANNEL_ID(CHANNEL_ID)) i_up_dac_channel (
@@ -681,7 +665,7 @@ module axi_ad9739a_channel #(
     .up_raddr (up_raddr),
     .up_rdata (up_rdata),
     .up_rack (up_rack));
-  
+
 endmodule
 
 // ***************************************************************************

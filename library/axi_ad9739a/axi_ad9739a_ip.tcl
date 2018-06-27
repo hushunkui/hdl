@@ -10,7 +10,7 @@ adi_ip_files axi_ad9739a [list \
   "$ad_hdl_dir/library/common/ad_dds_sine_cordic.v" \
   "$ad_hdl_dir/library/common/ad_dds_sine.v" \
   "$ad_hdl_dir/library/common/ad_dds_1.v" \
-  "$ad_hdl_dir/library/common/ad_dds.v" \
+  "$ad_hdl_dir/library/common/ad_dds_2.v" \
   "$ad_hdl_dir/library/common/ad_rst.v" \
   "$ad_hdl_dir/library/xilinx/common/ad_serdes_out.v" \
   "$ad_hdl_dir/library/common/up_axi.v" \
