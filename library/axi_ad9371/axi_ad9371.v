@@ -40,7 +40,6 @@ module axi_ad9371 #(
   parameter   ID = 0,
   parameter   DAC_DDS_TYPE = 1,
   parameter   DAC_DDS_CORDIC_DW = 16,
-  parameter   DAC_DDS_CORDIC_PHASE_DW = 16,
   parameter   DAC_DATAPATH_DISABLE = 0,
   parameter   ADC_DATAPATH_DISABLE = 0) (
 
@@ -264,9 +263,8 @@ module axi_ad9371 #(
 
   axi_ad9371_tx #(
     .ID (ID),
-    .DAC_DDS_TYPE (DAC_DDS_TYPE),
-    .DAC_DDS_CORDIC_DW (DAC_DDS_CORDIC_DW),
-    .DAC_DDS_CORDIC_PHASE_DW (DAC_DDS_CORDIC_PHASE_DW),
+    .DDS_CORDIC_DW (DAC_DDS_CORDIC_DW),
+    .DDS_TYPE (DAC_DDS_TYPE),
     .DATAPATH_DISABLE (DAC_DATAPATH_DISABLE))
   i_tx (
     .dac_rst (dac_rst),
