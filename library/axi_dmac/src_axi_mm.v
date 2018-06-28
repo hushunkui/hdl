@@ -88,7 +88,7 @@ module dmac_src_mm_axi #(
   input  [ 1:0]                    m_axi_rresp
 );
 
-`include "inc_id.h"
+`include "inc_id.vh"
 
 reg [ID_WIDTH-1:0] id = 'h00;
 
