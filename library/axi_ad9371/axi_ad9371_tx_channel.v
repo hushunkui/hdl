@@ -183,10 +183,11 @@ module axi_ad9371_tx_channel #(
 
   end else begin
 
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
-    .CORDIC_DW (DDS_CORDIC_DW))
+    .PHASE_DW (16),
+    .CORDIC_DW (16),
+    .CORDIC_PHASE_DW (16))
   i_dds_0 (
     .clk (dac_clk),
     .dds_format (dac_dds_format),
@@ -196,10 +197,11 @@ module axi_ad9371_tx_channel #(
     .dds_scale_1 (dac_dds_scale_2_s),
     .dds_data (dac_dds_data_0_s));
 
-  ad_dds #(
-    .DISABLE (0),
+  ad_dds_2 #(
     .DDS_TYPE (DDS_TYPE),
-    .CORDIC_DW (DDS_CORDIC_DW))
+    .PHASE_DW (16),
+    .CORDIC_DW (16),
+    .CORDIC_PHASE_DW (16))
   i_dds_1 (
     .clk (dac_clk),
     .dds_format (dac_dds_format),
@@ -254,7 +256,7 @@ module axi_ad9371_tx_channel #(
     .up_raddr (up_raddr),
     .up_rdata (up_rdata),
     .up_rack (up_rack));
-  
+
 endmodule
 
 // ***************************************************************************

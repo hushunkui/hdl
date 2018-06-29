@@ -20,7 +20,7 @@ add_fileset_file ad_dds_cordic_pipe.v       VERILOG PATH $ad_hdl_dir/library/com
 add_fileset_file ad_dds_sine_cordic.v       VERILOG PATH $ad_hdl_dir/library/common/ad_dds_sine_cordic.v
 add_fileset_file ad_dds_sine.v              VERILOG PATH $ad_hdl_dir/library/common/ad_dds_sine.v
 add_fileset_file ad_dds_1.v                 VERILOG PATH $ad_hdl_dir/library/common/ad_dds_1.v
-add_fileset_file ad_dds.v                   VERILOG PATH $ad_hdl_dir/library/common/ad_dds.v
+add_fileset_file ad_dds_2.v                 VERILOG PATH $ad_hdl_dir/library/common/ad_dds_2 .v
 add_fileset_file ad_datafmt.v               VERILOG PATH $ad_hdl_dir/library/common/ad_datafmt.v
 add_fileset_file ad_dcfilter.v              VERILOG PATH $ad_hdl_dir/library/altera/common/ad_dcfilter.v
 add_fileset_file ad_iqcor.v                 VERILOG PATH $ad_hdl_dir/library/common/ad_iqcor.v
